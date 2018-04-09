@@ -1,0 +1,79 @@
+.header
+  @include prefix(display,grid)
+  @include prefix(grid-template-columns,120px 1fr 120px)
+  // justify-content vamos a tener los siguientes valores: start end center strech space-around space-between space-evenly
+  justify-content: space-between
+  grid-gap : 10px
+  // box-shadow : 0px 2px 5px rgba(0, 0, 0, .16), 0 2px 10px rgba(0, 0, 0, 0.12)
+  height: 116px
+  position: fixed
+  width: 100%
+  background: rgba(255,255,255,.75)
+  z-index: 1000
+  top: 0
+  left: 0
+  .boxNav
+    @include prefix(align-self,center)
+    @include prefix(justify-self,start)
+    @include prefix(display,grid)
+    @include prefix(grid-template-columns,44px 1fr)
+    grid-gap : 5px
+    .boxLanguage
+      li
+        border-bottom: 1px solid $gris
+        a
+          @include my-font(15px, normal, "gotham_mediumregular")
+          color: black
+          line-height: 1.25em
+          transition: 0.5s all ease-out
+          &.active
+            color: $gris
+          &:hover
+            color: black
+        &:last-child
+          border-bottom: 0px solid $gris
+    a
+      display: block
+      &.boxBtnMenu
+        width: 41px
+        height: 41px
+        border-radius: 100%
+        background : $orangeLight
+        @include prefix(display,flex)
+        @include prefix(justify-content,center)
+        @include prefix(align-items,center)
+        @include prefix(flex-direction,column)
+        &.active
+          .point
+            width: 22px
+            height: 3px
+            border-radius: 6px
+            position: relative
+            &:nth-of-type(1)
+              top: 6px
+              left: 1px
+              transform: rotate(45deg)
+            &:nth-of-type(2)
+              top: -1px
+              left: 1px
+              transform: rotate(-45deg)
+            &:nth-of-type(3)
+              display: none
+
+        .point
+          width: 5px
+          height: 5px
+          display: block
+          background: white
+          margin-bottom: 4px
+          border-radius: 100%
+          &:last-child
+            margin-bottom: 0px
+  .boxLogo
+    // grid-column: 1 / span 2
+    width: 53px
+    display: block
+    align-self: center
+    justify-self: center
+    img
+      max-width: 100%

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Barlettis</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+<header class="header">
+  <div></div>
+  <a href="#" class="boxLogo">
+    <img src="./assets/image/logo.svg" alt="Barletti" title="Barletti" />
+  </a>
+  <div class="boxNav">
+    <a href="javascript:void(0)" class="boxBtnMenu" id="boxBtnMenu">
+      <span class="point"></span>
+      <span class="point"></span>
+      <span class="point"></span>
+    </a>
+    <ul class="boxLanguage">
+      <li><a href="#" class="active">Es</a></li>
+      <li><a href="#">En</a></li>
+    </ul>
+  </div>
+</header>
+<nav class="boxNav">
+  <ul>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">About us</a></li>
+    <li><a href="#">Good<br />neighbor<br />program</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+<section>
+  <div class="boxFullScrean">
+    <!-- <div></div> -->
+    <div class="boxDetail">
+      <div class="lazy-container full noyView">
+        <span class="overlay overlay--light active"></span>
+        <div class="bgImages" style="background-image:url(./assets/image/intro.jpg)"></div>
+      </div>
+      <div class="lazy-container full relative">
+        <div class="boxSliderVideo">
+          <video id="video-top" controls
+                 autoplay="autoplay"
+                 loop=""
+                 muted=""
+                 class="sliderVideo"
+                 data-src="https://player.vimeo.com/external/254139994.hd.mp4?s=60b26d718e2f40f879626d6b726362492bb2f596&profile_id=175">
+            <source src="https://player.vimeo.com/external/254139994.hd.mp4?s=60b26d718e2f40f879626d6b726362492bb2f596&profile_id=175" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+    <!-- <div></div> -->
+  </div>
+  <div class="footer flotante">
+    <div></div>
+    <div class="boxMouse">
+      <!-- <div class="down"></div> -->
+      <div class="circle">
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </div>
+    <div></div>
+  </div>
+</section>
+<section class="relative">
+  <div class="boxContent">
+    <!-- <div></div> -->
+    <div class="boxDetail lazy-container">
+      <div class="bgImages"></div>
+    </div>
+    <!-- <div></div> -->
+  </div>
+  <div class="footer flotante">
+    <div></div>
+    <div class="boxMouse">
+      <!-- <div class="down"></div> -->
+      <!-- <div class="circle">
+        <i class="fas fa-chevron-down"></i>
+      </div> -->
+    </div>
+    <div></div>
+  </div>
+</section>
+<footer class="footer">
+  <div></div>
+  <div></div>
+  <a href="http://wwww.google.com.pe" target="_blank"  class="boxClieng">
+    <img src="./assets/image/logoClieng.svg" alt="Clieng" title="Clieng">
+  </a>
+</footer>
+
+<!-- popup -->
+<div class="modal is-active">
+  <div class="modal-background"></div>
+  <div class="modal-content">
+    <!-- Any other Bulma elements you want -->
+    <div class="box">
+      <h2>Hi!<br />Welcome to barletti</h2>
+      <p>Sign up to stay in touch and receive news.</p>
+      <form>
+        <input type="text" name="name" placeholder="Name and Last Name">
+        <input type="text" name="email" placeholder="E-mail">
+        <button type="submit" name="btnsubmit">SUBSCRIBE</button>
+      </form>
+      <a href="javascript:void(0)">Omitir</a>
+    </div>
+  </div>
+  <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
+<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+<script src="./assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+.relative
+  position: relative
+.boxSliderVideo
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100vh
+  background: black
+  .sliderVideo
+    width: 100%
+    min-width: 100%
+    max-width: none
+    background-attachment: fixed
+.lazy-container
+  height: 100vh
+  overflow: hidden
+  &.noyView
+    display: none
+  &.full
+    height: 100vh
+.boxContent
+  background: white
+  @include prefix(display,grid)
+  // @include prefix(grid-template-columns,50px 1fr 50px)
+  @include prefix(grid-template-columns,1fr)
+.boxDetail
+  position: relative
+  left: 0
+  transition: 0.5s all ease-out
+  &.moveLeft
+    left: -220px
+  .bgImages
+    background: url(../image/1.jpg) no-repeat center center
+    @include prefix(background-size,cover)
+    height: inherit

@@ -1,0 +1,18 @@
+.modal
+  z-index: 2000
+  .modal-content
+    @media screen and (min-width: 769px)
+      width: 750px
+    .box
+      h2
+        @include my-font(65px, normal, "gotham_boldregular")
+        text-align: center
+        line-height: 1em
+      p
+        @include my-font(18px, normal, "gotham_boldregular")
+        text-align: center
+        line-height: 3.5em
+      form
+        border: 1px solid red
+  .modal-background
+    background-color: rgba(65,97,170,.85)
